@@ -39,8 +39,8 @@
         z-index: 1500;
         visibility: hidden;
         opacity: 0;
-        width: 50%;
-        transition: all .8s;
+        width: 55%;
+        transition: all .5s cubic-bezier(0.86, 0, 0.07, 1);
     }
 
     &__list{
