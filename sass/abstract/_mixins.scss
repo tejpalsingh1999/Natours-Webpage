@@ -42,14 +42,20 @@
 /*
 
 Breakpoint argument choices
+- s-phone
 - phone
 - tab-port
 - tab-land
 - big-desktop
 
+ORDER: Base + Typography > general layout + grid > page layout > components
+
 */
 
 @mixin respond($breakpoint) {
+    @if $breakpoint == s-phone{
+        @media (max-width: 26.8em){@content;} //430px
+    }
     @if $breakpoint == phone{
         @media (max-width: 37.5em){@content;}  //600px
     }

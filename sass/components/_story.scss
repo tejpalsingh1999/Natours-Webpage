@@ -11,6 +11,17 @@
 
     transform: skewX(-12deg);
 
+    @include respond(tab-port){
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(phone){
+        transform: skewX(0);
+    }
+
+
     &__shape{
         width: 15rem;
         height: 15rem;
@@ -21,6 +32,10 @@
         -webkit-clip-path: circle(49% at 50% 50%);
         clip-path: circle(49% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+
+        @include respond(phone){
+            transform: translateX(-3rem) skewX(0);
+        }
         
     }
 
@@ -30,7 +45,19 @@
         transition: all .5s;
     }
     &__text{
-        transform: skewX(12deg);;
+        transform: skewX(12deg);
+
+        @include respond(phone){
+            transform: skewX(0deg);
+            
+            & p{
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+            }
+        }
+        
+        
     }
 
     &__caption{

@@ -16,6 +16,18 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port){
+            height: 6rem;
+            width: 6rem;
+            top: 4rem;
+            right: 4rem;
+        }
+        
+        @include respond(phone){
+            top: 3rem;
+            right: 3em;
+        }
     }
 
     &__background{
@@ -29,6 +41,17 @@
         z-index: 1000;
         transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
         // transform: scale(80);
+
+        @include respond(tab-port){
+            height: 6rem;
+            width: 6rem;
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+        @include respond(phone){
+            top: 3rem;
+            right: 3em;
+        }
     }
 
     &__nav{
@@ -50,6 +73,10 @@
         transform: translate(-50%, -50%);
         list-style: none;
         text-align: center;
+
+        @include respond(phone){
+            width: 100%
+        }
     }
 
     &__item{
@@ -75,6 +102,7 @@
                 margin-right: 1.5rem;
                 display: inline-block;
             }
+            
         }
 
         &:hover,
@@ -99,6 +127,9 @@
         position: relative;
         margin-top: 3.5rem;
 
+        @include respond(tab-port){
+            margin-top: 3rem;
+        }
 
         &,
         &::before,

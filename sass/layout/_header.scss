@@ -7,6 +7,25 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
 
+    @include respond(tab-land){
+        margin-bottom: $gutter-vertical-small;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+    
+    @include respond(phone){
+        margin-bottom: $gutter-vertical-small;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        
+    }
+    @include respond(s-phone){
+        height: 95vh;
+        margin-bottom: $gutter-vertical-small;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 89vh, 0 100%);
+    }
+
     &__logo-box{
         position: absolute;
         top: 4rem;
