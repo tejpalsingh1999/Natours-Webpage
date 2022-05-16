@@ -80,6 +80,7 @@
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="PHOTOS"
                             class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
 
+
                         <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="PHOTOS"
                             class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
@@ -354,7 +355,8 @@
                     <div class="footer__navigation">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                            <li class="footer__item"><a href="#contactUs" class="footer__link" id="contactUs">Contact
+                                    Us</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
@@ -393,7 +395,39 @@
             </div>
         </div>
     </div>
+    <div class="popup" id="formPopup">
+        <div class="popup__content">
+            <div class="contactUs">
+                <a href="#contactUs" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Conatct Us!</h2>
+                <form onsubmit=" return validate();">
+                    <div class="row u-margin-bottom-medium">
+                        <input type="text" class="form__input form-check" id="form-check" placeholder="Full Name">
 
+                        <p class="form-error">Please enter valid name</p>
+                    </div>
+
+                    <div class="row u-margin-bottom-medium">
+                        <input type="text" class="form__input form-check" placeholder="Phone Number">
+
+                        <p class="form-error">Please enter valid phone number !</p>
+                    </div>
+                    <div class="row">
+
+                        <div class="row">
+
+                            <input type="text" class="form__input form-check" placeholder="Email Address">
+                            <p class="form-error">Please enter valid email address</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn--green">Request a callback !</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
     <!-- <section class="grid-test">
 
         <div class="row">
