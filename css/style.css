@@ -185,7 +185,7 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .2s;
+  transition: all 0.2s;
   font-size: 1.6rem;
   position: relative;
   border: none;
@@ -225,32 +225,32 @@ body {
   top: 0rem;
   left: 0rem;
   z-index: -1;
-  transition: all .4s;
+  transition: all 0.4s;
   /* background-color: blue; */ }
 
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
-.btn-text:link, .btn-text:visited {
+.btn-text {
+  border: none;
+  background-color: transparent;
   font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
   padding: 3px;
-  transition: all .2s; }
-
-.btn-text:hover {
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-  padding: 3px 10px;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
+  transition: all 0.2s; }
+  .btn-text:hover {
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    padding: 3px 10px;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+  .btn-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
 
 .composition {
   position: relative; }
@@ -627,7 +627,7 @@ body {
   z-index: 3000;
   visibility: hidden;
   opacity: 0;
-  transition: all .1s; }
+  transition: all 0.1s; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     .popup {
       backdrop-filter: blur(10px);
@@ -646,7 +646,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all .4s .2s; }
+    transition: all 0.4s 0.2s; }
   .popup__left {
     display: table-cell;
     width: 33%; }
@@ -654,7 +654,7 @@ body {
     display: table-cell;
     width: 67%;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    padding: 0rem 5rem; }
   .popup__img {
     display: block;
     width: 100%; }
@@ -676,7 +676,7 @@ body {
     font-size: 3rem;
     text-decoration: none;
     display: inline-block;
-    transition: all .2s;
+    transition: all 0.2s;
     line-height: 1; }
   .popup__close:hover {
     color: #55c57a; }

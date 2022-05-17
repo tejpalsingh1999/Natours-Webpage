@@ -6,6 +6,15 @@ const popup = document.querySelector('.popup');
 const close = document.querySelectorAll('.popup__close');
 const contactUsPage = document.querySelector('#contactUs')
 const formPopup = document.querySelector('#formPopup')
+const bookNowTours = document.getElementById('bookNowTours')
+const nextStepBtn = document.getElementById('nextStepBtn')
+
+nextStepBtn.addEventListener('click', function () {
+    alert('Thank You for your interest! Our executive will get in touch with you soon!')
+})
+bookNowTours.addEventListener('click', function () {
+    alert('Website is under construction! More tours will be added soon :)')
+})
 
 for (let i = 0; i < button.length; i++) {
     button[i].addEventListener('click', function () {
@@ -101,3 +110,41 @@ We will get in touch with you very soon!`)
 /*
 <--------------------------- FORM VALIDATION ----------------------------->
 */
+
+
+/*
+<--------------------------- IMPLEMENTING SMOOTH SCROLLING ----------------------------->
+*/
+
+const discoverTourBtn = document.querySelector('#discoverTourBtn')
+const sectionTours = document.querySelector('#sectionTours')
+const navToggle = document.querySelector('#navi_toggle')
+const bookNow = document.getElementById('bookNow')
+
+const navItems = document.querySelectorAll('.navigation__link')
+
+const contactUs = document.getElementById('contactUsBtn')
+
+const learnMore = document.getElementById('learnMore')
+const features = document.getElementById('sectionFeatures')
+
+contactUs.addEventListener('click', function () {
+    formPopup.classList.add('popup--hidden')
+    // navToggle.checked = false
+})
+
+discoverTourBtn.addEventListener('click', function () {
+    sectionTours.scrollIntoView({ behavior: 'smooth' })
+})
+
+learnMore.addEventListener('click', function () {
+    features.scrollIntoView({ behavior: 'smooth' })
+})
+
+
+for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', function () {
+        navToggle.checked = false
+    })
+
+}

@@ -25,11 +25,18 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Natours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your Benefits</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular Tours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book Now</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span> About Natours</a>
+                </li>
+                <li class="navigation__item"><a href="#sectionTours" class="navigation__link"><span>02</span> Popular
+                        Tours</a></li>
+                <li class="navigation__item"><a href="#sectionStories" class="navigation__link"><span>03</span>
+                        Stories</a></li>
+                <li class="navigation__item"><a href="#bookForm" class="navigation__link" id="bookNow"><span>04</span>
+                        Book
+                        Now</a></li>
+                <li class="navigation__item"><a href="#contactUs" class="navigation__link"
+                        id="contactUsBtn"><span>05</span>
+                        Contact Us</a></li>
             </ul>
         </nav>
     </div>
@@ -44,11 +51,11 @@
                 <span class="heading-primary--main">Outdoors</span>
                 <span class="heading-primary--sub">is where life happens</span>
             </h1>
-            <a href="#sectionTours" class="btn btn--white btn--animated">Discover our tours</a>
+            <button class="btn btn--white btn--animated" id="discoverTourBtn">Discover our tours</button>
         </div>
     </header>
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
             </div>
@@ -67,7 +74,7 @@
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi esse quam sed. Voluptates quidem
                         nostrum quia, eaque nihil ut delectus?
                     </p>
-                    <a href="#" class="btn-text ">Learn More &rarr;</a>
+                    <button href="#sectionFeatures" class="btn-text " id="learnMore">Learn More &rarr;</button>
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
@@ -89,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-features">
+        <section class="section-features" id="sectionFeatures">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
@@ -238,12 +245,12 @@
                 </div>
             </div>
             <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn btn--green">Discover all tours</a>
+                <a href="#sectionTours" class="btn btn--green" id="bookNowTours">Discover all tours</a>
             </div>
 
 
         </section>
-        <section class="section-stories">
+        <section class="section-stories" id="sectionStories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
@@ -295,11 +302,11 @@
                 </div>
             </div>
             <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn-text">Read All Stories &rarr;</a>
+                <a class="btn-text">Read All Stories &rarr;</a>
             </div>
         </section>
 
-        <section class="section-book">
+        <section class="section-book" id="bookForm">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
@@ -332,7 +339,7 @@
                                 </div>
                             </div>
                             <div class="form__group">
-                                <button class="btn btn--green">Next Step &rarr;</button>
+                                <button class="btn btn--green" id="nextStepBtn">Next Step &rarr;</button>
                             </div>
                         </form>
                     </div>
@@ -391,7 +398,7 @@
                     maiores dicta. Obcaecati rerum autem quibusdam tenetur ex optio tempora in. Eveniet, pariatur. Lorem
                     ipsum dolor sit amet consectetur, adipisicing elit. Vel inventore voluptatem reiciendis non. Ab
                     neque cumque sint ut beatae asperiores ea labore modi eaque voluptate obcaecati</p>
-                <a href="#" class="btn btn--green">Book Now</a>
+                <a href="#bookForm" class="btn btn--green">Book Now</a>
             </div>
         </div>
     </div>
